@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>KeyListener</title>
+        <div id="test">playerSpriteX = 0</div>
+        
+    </head>
+    <body>
+        <script>
+            let playerSpriteX = 0;
+
+            document.addEventListener('keyup', (e) =>{
+                if (e.code === "ArrowUp") playerSpriteX += 10
+                else if (e.code === "ArrowDown") playerSpriteX -=10
+                else if (e.code === "Arrowleft") playerSpriteX +=20
+                else if (e.code === "ArrowRight") playerSpriteX -=20
+
+                document.getElementById('test').innerHTML = 'playerSpriteX = ' + playerSpriteX;
+            })
+        </script>
+        
+    </body>
+</html>
