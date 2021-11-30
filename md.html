@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html></html>
+<head>
+    <div id="t">playerSpriteX = 0</div>
+</head>
+<body>
+    <script>
+  let playerSpriteX = 0;
+
+document.addEventListener('keyup', (e) => {
+  if (e.code === "ArrowUp")        playerSpriteX += 10
+  else if (e.code === "ArrowDown") playerSpriteX -= 10
+  document.getElementById('t').innerHTML = 'playerSpriteX = ' + playerSpriteX;
+}); 
+    </script>  
+</body>
