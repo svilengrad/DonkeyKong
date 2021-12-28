@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <div class="container">
+                <img src="https://github.com/dahoum/DonkeyKong/blob/main/45989.png?raw=true" />
+            </div>
+            <div class="container">
+                <img id="clip" src="https://github.com/dahoum/DonkeyKong/blob/main/45989.png?raw=true"
+            </div>
+        </head>
+        <body>
+            <script>
+                .container; {
+                    position: relative;
+                }
+                    #clip; {
+                        position: absolute;
+                        clip: rect(0, 100, 200, 0);
+                        /* clip: shape(top, right, bottom, left); NB 'rect' is the only available option */
+                    }
+            </script>
+        </body>
+    </html>
