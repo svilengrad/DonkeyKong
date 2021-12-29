@@ -1,23 +1,38 @@
 <!DOCTYPE html>
-    <html>
-        <head>
-            <div class="container">
-                <img src="https://github.com/dahoum/DonkeyKong/blob/main/45989.png?raw=true" />
-            </div>
-            <div class="container">
-                <img id="clip" src="https://github.com/dahoum/DonkeyKong/blob/main/45989.png?raw=true"
-            </div>
-        </head>
-        <body>
-            <style>
-                .container {
-                    position: relative;
-                }
-                    #clip  {
-                        position: absolute;
-                        clip: rect(0, 100, 200, 0);
-                        /* clip: shape(top, right, bottom, left); NB 'rect' is the only available option */
-                    }
-            </style>
-        </body>
-    </html>
+<html>
+    <head>
+        <style>
+            #navlist {
+                position: relative;
+            }
+
+            #navlist li {
+                margin:0;
+                padding: 0;
+                list-style: none;
+                position: absolute;
+                top: 0;
+            }
+
+            #navlist li, #navlist a {
+                height: 70px;
+                display: block;
+            }
+
+            #monkey {
+                left: 200;
+                width: 75px;
+                background: url('https://tse4.mm.bing.net/th?id=OIP.XXhfS5XtAdcs6fWlKodJvgHaDS&pid=Api&P=0&w=346&h=154') 0 0;
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <ul id="navlist">
+            <li id="monkey"><a href="default.asp"></a></li>
+        </ul>
+
+    </body>
+
+</html>
