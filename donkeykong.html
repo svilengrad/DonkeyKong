@@ -1,0 +1,70 @@
+<!-- THIS BEGAN AS THE 5TH FILE FROM PG -->
+<!-- THEN WE INTEGRATED THE 6TH FILE FROM PG -->
+<!DOCTYPE html>
+    <html>
+        <head>
+            <style> 
+                .container {
+                    position: relative;
+                }
+                #clip  {
+                        position: absolute;
+                        clip: rect(0, 100, 200, 0);
+                    }
+            </style>
+            <script>
+                function DonkeyKong() {
+                    
+                    /*
+                     *
+                     * Initial state of the game
+                     * 
+                     */
+                    var   costume  = 1;
+                    var   cosDelay = 200; //controls the time between switching the costumes
+                    const interval = 50; // ms of interval for the setInterval(). This defines the speed of the game.
+                    
+                    tID = setInterval(() => {
+
+                        /*
+                         *
+                         * Animation of Mario
+                         *
+                         */
+                        if(costume == 1){
+                            
+                            document.getElementById("mario").style =
+
+                                `position: absolute; left: ` + 0 + `; top: ` + 0 + `; height: 35px; width: 38px; background: url(sprites/mario.png) -110px 0px;`;
+                        
+                            costume = 2;
+
+                        }else{
+                            
+                            document.getElementById("mario").style =
+
+                                `position: absolute; left: ` + 0 + `; top: ` + 0 + `; height: 35px; width: 38px; background: url(sprites/mario.png) -70px 0px;`;
+                            
+                            setTimeout(costumeDelay, cosDelay)
+
+                            function costumeDelay() {
+
+                                costume = 1;
+
+                            }
+
+                        }
+
+                    }, interval); //end of setInterval
+                
+                }
+            </script>
+        </head>
+        <body onload="DonkeyKong();">
+            
+            <div style="position: relative; ">
+        
+                <div style="position: absolute; top: 0; left: 0; z-index: 11; " id="mario"></div>
+            </div>
+        </body>
+    </html>
