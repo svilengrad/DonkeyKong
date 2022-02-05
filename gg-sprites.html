@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <style>
+                .container {
+                    position: relative;
+                }
+                #clip  {
+                        position: absolute;
+                        clip: rect(0, 100, 200, 0);
+                    }
+            </style>
+            <script>
+                function DonkeyKong() {
+
+                    var costume = 1;
+                    var cosDelay = 200;
+                    const interval = 50;
+
+                    tID = setInterval(() => {
+                        if(costume == 1){
+                            document.getElementById("kong").style =
+
+                                `position: absolute; left: ` + 0 + `; top: ` + 0 + `; height: 35px; width: 38px; background: url(sprites/mario.png) -115px -35px;`;
+                            costume = 2;
+                        }else{
+                            document.getElementById("kong").style =
+
+                                `position: absolute; left: ` + 0 + `; top: ` + 0 + `; height: 35px; width: 38px; background: url(sprites/mario.png) -155px -35px;`;
+                            setTimeout(costumeDelay, cosDelay)
+
+                            function costumeDelay(){
+
+                                costume = 1;
+
+                            }
+                        }
+                    }, interval);
+                }
+            </script>
+        </head>
+        <body onload="DonkeyKong();">
+            
+            <div style="position: relative; ">
+        
+                <div style="position: absolute; top: 0; left: 0; z-index: 11; " id="kong"></div>
+            </div>
+        </body>
+        
+    </html>
