@@ -1,10 +1,8 @@
 # Donkey Kong
 
-## 30 January
+## 13 February
 
-pg, ki, dg, te
-
-Merged pg 5 and 6 into animation.
+pg, ki, dg, md, gg, te, rr
 
 ### Homework
 
